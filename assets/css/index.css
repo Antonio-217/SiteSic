@@ -2218,7 +2218,8 @@ responsive
 }
 
   .video-sic{
-    margin-top: 30%;
+    margin-left: 20%;
+    margin-top: 3%;
   }
 
   .altura{
@@ -2248,4 +2249,20 @@ responsive
 
   .cor{
     color: #152249 !important;
+  }
+
+  .noticia{
+    width: 1000px;
+    height: 1000px;
+    margin-left: 12%;
+    margin-right: 25%;
+  }
+
+  .margem_final{
+    margin-bottom: 19%;
+  }
+
+  .margem_teste{
+    margin-bottom: 0% !important;
+    margin-top: 0% !important;
   }
