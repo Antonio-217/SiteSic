@@ -2217,8 +2217,11 @@ responsive
 
 }
 
+  
+
   .video-sic{
     margin-left: 20%;
+    margin-right: 20%;
     margin-top: 3%;
   }
 
@@ -2252,10 +2255,9 @@ responsive
   }
 
   .noticia{
-    width: 1000px;
-    height: 1000px;
-    margin-left: 12%;
-    margin-right: 25%;
+    width: 100%; /* isso é padrão para elementos div */
+    height: 100%;
+    text-align: center;
   }
 
   .margem_final{
@@ -2265,4 +2267,11 @@ responsive
   .margem_teste{
     margin-bottom: 0% !important;
     margin-top: 0% !important;
+  }
+
+  .branco{
+    width: 200px;
+    height: 200px;
+    margin-left: 10%;
+    margin-right: 25%;
   }
