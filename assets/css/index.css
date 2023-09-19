@@ -2217,12 +2217,14 @@ responsive
 
 }
 
-  
-
   .video-sic{
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 100%;
+    height: 100%;
     margin-top: 3%;
+    margin-bottom: 6%;
+    display: flex; /* Exibe os elementos filhos em linha */
+    justify-content: center; /* Distribui espaço igualmente entre eles */
+    align-items: center;
   }
 
   .altura{
@@ -2275,3 +2277,29 @@ responsive
     margin-left: 10%;
     margin-right: 25%;
   }
+
+  .container2 {
+    position: relative; /* Define o contexto de posicionamento */
+    z-index: 1;
+    display: flex; /* Exibe os elementos filhos em linha */
+    justify-content: space-between; /* Distribui espaço igualmente entre eles */
+    flex-wrap: wrap;
+  }
+
+  /* Estilos para os blocos individuais */
+  .block {
+    width: calc(33.33% - 20px); /* Define a largura de cada bloco */
+      box-sizing: border-box; /* Garante que a largura inclua a borda e o preenchimento */
+  }
+
+  @media screen and (max-width: 768px) {
+    .block {
+        width: calc(50% - 20px); /* Reduz a largura dos blocos para 50% em telas menores */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .block {
+        width: 100%; /* Em telas ainda menores, os blocos ocuparão toda a largura disponível */
+    }
+}
