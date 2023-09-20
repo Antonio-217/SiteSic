@@ -189,6 +189,18 @@ body {
   color: #f77a2f;
 }
 
+.section-heading h4 em3 {
+  font-style: normal;
+  font-size: 60px;
+  color: #ffffff;
+}
+
+.section-heading h4 em4 {
+  font-style: normal;
+  font-size: 60px;
+  color: #152249;
+}
+
 .section-heading img {
   width: 45px;
   height: 2px;
@@ -2246,6 +2258,7 @@ responsive
     align-items: center;
     align-content: center;
     align-self: center;
+    margin-bottom: 0% !important;
   }
 
   .margem_text{
@@ -2260,10 +2273,15 @@ responsive
     width: 100%; /* isso é padrão para elementos div */
     height: 100%;
     text-align: center;
+    position: relative; /* Define o contexto de posicionamento */
+    z-index: 1;
+    display: flex; /* Exibe os elementos filhos em linha */
+    justify-content: space-between; /* Distribui espaço igualmente entre eles */
+    flex-wrap: wrap;
   }
 
   .margem_final{
-    margin-bottom: 19%;
+    margin-bottom: 0% !important;
   }
 
   .margem_teste{
@@ -2302,4 +2320,8 @@ responsive
     .block {
         width: 100%; /* Em telas ainda menores, os blocos ocuparão toda a largura disponível */
     }
+}
+
+.somos{
+  margin-top: 0% !important;
 }
